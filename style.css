@@ -49,3 +49,7 @@ footer {
     background: #ffffff;
     border-top: 2px solid #6a0dad;
 }
+
+.button {
+    margin-top: 20px; /* zmień wartość na odpowiednią */
+}
