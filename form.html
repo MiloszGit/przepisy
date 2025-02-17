@@ -3,84 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt | Przepisy Kulinarne</title>
+    <title>Formularz kontaktowy</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
+            background-color: #1e1e2e;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
         }
         .container {
-            max-width: 600px;
-            margin: 50px auto;
+            background-color: #2a2a3c;
             padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
         }
         h2 {
             text-align: center;
-            color: #8B008B;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
+            color: #8a2be2;
         }
         label {
-            margin-top: 10px;
             font-weight: bold;
+            display: block;
+            margin-top: 10px;
         }
         input, textarea {
+            width: 100%;
             padding: 10px;
             margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
-        }
-        button {
-            margin-top: 15px;
-            padding: 10px;
-            background-color: #8B008B;
-            color: white;
             border: none;
             border-radius: 5px;
+            background-color: #3b3b4f;
+            color: #ffffff;
+        }
+        input:focus, textarea:focus {
+            outline: 2px solid #8a2be2;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: #8a2be2;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
             cursor: pointer;
+            transition: background 0.3s;
         }
         button:hover {
-            background-color: #6A006A;
-        }
-        .contact-info {
-            text-align: center;
-            margin-top: 20px;
+            background-color: #6d1bb5;
         }
         .message {
             text-align: center;
-            color: green;
-            font-weight: bold;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Kontakt</h2>
-     <form action="kontakt.php" method="POST">
+        <h2>Skontaktuj się z nami</h2>
+        <form action="send_mail.php" method="POST">
             <label for="name">Imię:</label>
             <input type="text" id="name" name="name" required>
-            
-            <label for="email">E-mail:</label>
+
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
+
             <label for="message">Wiadomość:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
+            <textarea id="message" name="message" rows="5" required></textarea>
+
             <button type="submit">Wyślij</button>
         </form>
-        <div class="contact-info">
-            <p>Email: kontakt@przepisy.pl</p>
-            <p>Telefon: +48 123 456 789</p>
-        </div>
     </div>
 </body>
 </html>

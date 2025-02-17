@@ -51,5 +51,9 @@ footer {
 }
 
 .button {
-    margin-top: 20px; /* zmień wartość na odpowiednią */
+    padding: 30px; /* Powiększenie odstępów wewnątrz przycisków */
+    outline: none;
+    box-shadow: none;
+    margin: 30px;
 }
+
