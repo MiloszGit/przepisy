@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Nieprawidłowy adres e-mail.");
     }
 
-    $to = "milosz.biniek.1995@gmail.com"; // Podmień na adres e-mail, na który chcesz otrzymywać wiadomości
+    $to = "kontakt@klaudiagotuje.pl"; // Podmień na adres e-mail, na który chcesz otrzymywać wiadomości
     $subject = "Nowa wiadomość od: $name";
     $headers = "From: $email\r\nReply-To: $email\r\nContent-Type: text/plain; charset=UTF-8";
 
