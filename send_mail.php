@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $to = "kontakt@klaudiagotuje.pl"; // Podmień na adres e-mail, na który chcesz otrzymywać wiadomości
-    $subject = "Nowa wiadomość od: $name";
+    $subject = "Nowa wiadomosc od: $name";
     $headers = "From: $email\r\nReply-To: $email\r\nContent-Type: text/plain; charset=UTF-8";
 
     $fullMessage = "Imię: $name\nEmail: $email\n\nWiadomość:\n$message";
